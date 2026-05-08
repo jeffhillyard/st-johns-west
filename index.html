@@ -33,6 +33,24 @@
       overflow-x: hidden;
     }
 
+     .hamburger {
+    display: none;
+  }
+
+  /* ADD THIS NEAR THE BOTTOM */
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+    
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 200;
